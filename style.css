@@ -1,0 +1,831 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #fbfbfb;
+    color: #333333;
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4292C6;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 16px;
+}
+
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 18px 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav hr {
+    border: none;
+    border-top: 1px solid #dddddd; 
+    margin: 5px 0 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 7px;
+    padding: 6px 4px;
+}
+
+nav a:hover {
+    color: #4292C6;
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+section:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.10);
+}
+
+h2 {
+    color: #4292C6;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #4292C6;
+    font-size: 21px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #555555;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+main section:first-child h2 {
+    border-bottom: 3px solid #4292C6;
+    padding-bottom: 10px;
+}
+.no-line {
+border-bottom: none !important;
+}
+
+main section p {
+    max-width: 950px;
+}
+
+ul,
+ol {
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 9px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+section img {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+section img:hover {
+    transform: scale(1.02);
+}
+
+section img[width="400"] {
+    width: 400px;
+    max-width: calc(100% - 20px);
+    height: auto;
+}
+
+a {
+    color: #4292C6;
+}
+
+a:hover {
+    color: #4292C6;
+}
+
+table {
+    width: 100%;
+    border-radius: 15px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border: none;
+    table-layout: fixed;
+}
+
+th,
+td {
+    width: 25%;
+    padding: 15px 20px;
+    text-align: left;
+    vertical-align: top;
+    border: none;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #4292C6;
+    color: white;
+}
+
+td {
+    white-space: normal;
+    word-wrap: break-word;
+}
+th:first-child {
+    border-top-left-radius: 15px;
+}
+
+th:last-child {
+    border-top-right-radius: 15px;
+}
+
+tr {
+    background-color: #f3f3f3;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+tr:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px;
+    color: #333333;
+}
+
+form {
+    max-width: 650px;
+    background-color: #fafafa;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #eeeeee;
+}
+
+label {
+    font-weight: bold;
+    color: #444444;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 11px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4292C6;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4292C6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4292C6;
+}
+
+
+blockquote {
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 5px solid #4292C6;
+    background-color: #f7f7f7;
+    border-radius: px;
+}
+
+
+body > div {
+    background-color: white;
+    width: 80%;
+    max-width: 700px;
+    margin: 70px auto !important;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.10);
+}
+
+body > div h1 {
+    color: #4292C6;
+    font-size: 35px;
+}
+
+body > div p {
+    font-size: 18px;
+}
+
+body > div a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4292C6;
+    color: white;
+    text-decoration: none;
+    border-radius: 0px;
+    font-weight: bold;
+}
+
+body > div a:hover {
+    background-color: #4292C6;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #666666;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.literary-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: none;
+}
+
+.literary-table th:nth-child(1),
+.literary-table td:nth-child(1),
+.literary-table th:nth-child(3),
+.literary-table td:nth-child(3) {
+    width: 13%;
+}
+
+.literary-table th:nth-child(2),
+.literary-table td:nth-child(2),
+.literary-table th:nth-child(4),
+.literary-table td:nth-child(4) {
+    width: 37%;
+}
+
+.literary-table th,
+.literary-table td {
+    padding: 15px 10px;
+    text-align: left;
+    vertical-align: top;
+    border: none;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav a {
+        margin: 3px;
+        font-size: 14px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+        display: block;
+        overflow-x: auto;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    img {
+        width: 90% !important;
+        max-width: 90%;
+        height: auto !important;
+        margin: 8px auto;
+        display: block;
+    }
+
+    form {
+        width: 100%;
+        padding: 18px;
+    }
+
+}
+
+.geometric-wireframe {
+    width: 100%;
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.geometric-wireframe h2 {
+    color: #4292C6;
+}
+
+.geometric-wireframe h3 {
+    color: white;
+}
+
+.geometric-wireframe p {
+    color: black;
+}
+
+.geo-rectangle {
+    width: 100%;
+    min-height: 100px;
+
+    background-color: #4292C6;
+
+    border: none;
+
+    padding: 25px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.geo-rectangle.geo-card {
+    width: 80% ;
+    min-height:300px ;
+height: 300px ;
+    margin:20px auto;
+}
+
+.geo-header h3 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.geo-header p {
+    margin: 5px 0 0;
+}
+
+.geo-navigation {
+    min-height: 65px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    gap: 12px;
+
+    padding: 15px;
+}
+
+.geo-navigation span {
+    background-color: #dceefa;
+    color: #245b82;
+
+    padding: 8px 15px;
+
+    border: none;
+
+    font-weight: bold;
+}
+
+.geo-property {
+    color: #245b82 !important;
+
+    font-size: 14px !important;
+
+    text-align: center;
+
+    margin: 8px 0 25px;
+}
+
+.geo-property b {
+    color: #23658f;
+}
+
+.geo-trapezoid {
+    width: 80%;
+    min-height: 170px;
+    margin: 30px auto 0;
+    background-color: #317bab;
+    color: white;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    clip-path: polygon(
+        15% 0,
+        85% 0,
+        100% 100%,
+        0 100%
+    );
+}
+
+.geo-trapezoid h3 {
+    margin: 0;
+    font-size: 27px;
+}
+
+.geo-trapezoid p {
+    margin: 5px 0;
+}
+
+.geo-trapezoid.geo-card {
+    width: 110%;
+    min-height: 300px;
+height: 300px;
+    padding: 30px;
+    margin: 20px auto;
+}
+
+.geo-content {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 1fr;
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.geo-column {
+    width: 100%;
+}
+
+.geo-parallelogram {
+    width: 100%;
+    min-height: 220px;
+    height: 220px;    
+    background-color: #23658f;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    clip-path: polygon(
+        15% 0,
+        100% 0,
+        85% 100%,
+        0 100%
+    );
+}
+
+.geo-parallelogram.geo-card
+width: 75% ;
+height: 150px ;
+min-height: 150px ;
+margin: 20px auto ;
+}
+
+.geo-parallelogram h3 {
+    margin: 0 0 8px;
+}
+
+.geo-parallelogram p {
+    font-size: 14px !important;
+}
+
+.geo-square {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    background-color: #4292C6;
+
+    border: none;
+
+    color: white;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+.geo-square h3 {
+    margin-top: 0;
+}
+
+.geo-graph {
+    position: relative;
+
+    width: 85%;
+    height: 180px;
+
+    margin: 25px auto;
+
+    background-color: white;
+
+    border-left: 4px solid #245b82;
+    border-bottom: 4px solid #245b82;
+}
+
+.geo-demand {
+    position: absolute;
+
+    width: 75%;
+    height: 4px;
+
+    background-color: #23658f;
+
+    left: 12%;
+    top: 45%;
+
+    transform: rotate(-25deg);
+}
+
+.geo-supply {
+    position: absolute;
+
+    width: 75%;
+    height: 4px;
+
+    background-color: #78b8dc;
+
+    left: 12%;
+    top: 45%;
+
+    transform: rotate(25deg);
+}
+
+.geo-price {
+    position: absolute;
+
+    left: -45px;
+    top: 10px;
+
+    color: #245b82;
+
+    font-size: 12px;
+
+    transform: rotate(-90deg);
+}
+
+.geo-quantity {
+    position: absolute;
+
+    right: -45px;
+    bottom: -25px;
+
+    color: #245b82;
+
+    font-size: 12px;
+}
+
+.geo-features {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 35px;
+}
+
+
+.geo-card {
+    min-height: 220%;
+}
+
+.geo-card h3 {
+    margin: 0 0 5px;
+}
+
+.geo-card p {
+    font-size: 14px !important;
+}
+
+.geo-card b {
+    color: #dceefa;
+    font-size: 12px;
+}
+
+.geo-budget {
+    margin-top: 35px;
+
+    text-align: center;
+}
+
+
+.geo-budget-box {
+    width: 360px;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    min-height: 360px;
+
+    display: block;
+
+    padding: 30px;
+}
+
+
+.geo-budget-box h3 {
+    text-align: center;
+}
+
+.geo-input {
+    width: 100%;
+    height: 40px;
+
+    background-color: white;
+
+    border: none;
+
+    margin: 15px 0;
+
+    padding: 8px;
+
+    color: #555;
+    text-align: left;
+}
+
+.geo-button {
+    width: 100%;
+
+    padding: 10px;
+
+    background-color: #23658f;
+
+    color: white;
+
+    font-weight: bold;
+
+    border: none;
+}
+
+.geo-footer {
+    min-height: 80px;
+
+    margin-top: 35px;
+}
+
+.geo-footer h3 {
+    margin: 0;
+}
+
+.geo-footer p {
+    margin: 3px 0;
+}
+
+@media (max-width: 700px) {
+
+    .geometric-wireframe {
+        width: 94%;
+        padding: 20px;
+    }
+
+    .geo-content {
+        grid-template-columns: 1fr;
+    }
+
+    .geo-features {
+        grid-template-columns: 1fr;
+    }
+
+    .geo-trapezoid {
+        width: 100%;
+    }
+
+    .geo-navigation {
+        flex-direction: column;
+    }
+
+    .geo-navigation span {
+        width: 100%;
+    }
+
+}
+
+.geo-parallelogram.geo-card {
+width: 80%;
+min-height: 300px;
+height: 300px;
+margin: 20px auto;
+
+}
